@@ -6,6 +6,9 @@ RUN mkdir /app
 
 COPY package.json /app
 COPY *.js /app
-ADD node_modules/ /app/node_modules/
+
+WORKDIR /app
+RUN npm install
+# ADD node_modules/ /app/node_modules/
 
 CMD ["node", "/app"]
