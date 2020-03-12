@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:12-slim
 
 MAINTAINER Mobapi "contact@mobapi.com"
 
@@ -9,6 +9,5 @@ COPY *.js /app
 
 WORKDIR /app
 RUN npm install
-# ADD node_modules/ /app/node_modules/
 
 CMD ["node", "/app"]
