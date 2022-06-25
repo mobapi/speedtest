@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "speedtest-net": "^2.1.1"
   }
 }
